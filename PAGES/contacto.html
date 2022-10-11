@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Contenedor noticias-->
+    <div class="container">
+        <!--Header con navbar-->
+        <header class="header">
+            <nav>
+                <ul class="navBar">
+                    <li><a class="animBar" href="../index.html">Inicio</a></li>
+                    <li><a class="animBar" href="./pages/banda.html">Banda</a></li>
+                    <li><a class="animBar" href="./pages/galeria.html">Galeria</a></li>
+                    <li><a class="animBar" href="./noticias.html">Noticias</a></li>
+                    <li><a class="animBar" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Main con formulario de contacto-->
+            <section class="main-contacto">
+                <!--Formulario de contacto con 3 fieldset y 1 contendor-->
+                <form  class="contacto-form" action="" method="post" enctype="">
+                    <!--Fieldset datos personales-->
+                    <fieldset class="fieldset-properties alignFst">
+                        <legend>Datos personales</legend>
+                        <label for="nombre">
+                            <p>¿Cual es tu Nombre?</p>
+                            <input class="inptespecial" type="text" id="nombre" placeholder="Escribí aca tu nombre">
+                        </label>
+                        <label for="apellido">
+                            <p>¿Cual es tu Apellido</p>
+                            <input class="inptespecial" type="text" id="apellido" placeholder="Escribí aca tu apellido">
+                        </label>
+                        <label for="email">
+                            <p>¿Ingresa tu E-mail?</p>
+                            <input class="inptespecial" type="email" id="email" placeholder="Escribí aca tu e-mail">
+                        </label>
+                    </fieldset>
+                    <!--Fieldset tipo de contacto-->
+                    <fieldset class="fielset-contactType alignFst">
+                        <legend>Motivo</legend>
+                        <label for="contrataciones">Contrataciones</label>
+                        <input type="radio" id="contrataciones" name="Motivo" value="contrataciones">
+                        <label for="Souveniers">Souveniers</label>
+                        <input type="radio" id="Souveniers" name="Motivo" value="Souveniers">
+                        <label for="Consultas">Consultas</label>
+                        <input type="radio" id="Consultas" name="Motivo" value="Consultas">
+                        <label for="acepta">Quiere recibir noticias?</label>
+                        <input type="checkbox" id="acepta" name="acepta">
+                    </fieldset>
+                    <!--Fieldset Mensaje-->
+                    <fieldset class="fieldset-msj alignFst">
+                        <legend>Mensaje</legend>
+                        <label for="mensaje">
+                        <textarea name="Mensaje" id="Mensaje" cols="80" rows="15"></textarea>
+                        </label>
+                    </fieldset>
+                    <!--Contendor con botones de enviar y limpiar-->
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="submit" Value="Limpiar Formulario">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!--footer con dos secciones: derechos y redes-->
+        <footer class="footer">
+            <section class="footer-redes">
+                <div>
+                    <a href="https://www.instagram.com/jimilater/" target="_blank">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="../assets/img/insta.png">
+                            <img class=".footer-redes-img" src="../assets/img/insta-m.png" alt="" >
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100066460667670" target="_blank">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="../assets/img/face.png">
+                            <img class=".footer-redes-img" src="../assets/img/face-m.png" alt="" >
+                        </picture>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/channel/UC3cYRHSups3hoRcPh4zCfmA" target="_blank">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="../assets/img/youtube.png">
+                            <img class=".footer-redes-img" src="../assets/img/youtube-m.png" alt="">
+                        </picture>
+                    </a>
+                </div>    
+            </section> 
+            <section class="footer-derechos">
+                <p>jimilaterandtheimpuntuals.com.ar ®</p>
+                <p>Todos los derechos reservados</p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
