@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/**demarcacion de contenedor y grid mobile first**/
+/**demarcacion de contenedor y grid mobile first index**/
 .container-index{
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     "main"
     "footer";
 }
-/**clases y propiedades de navegador y header mobile**/
+/**propiedades de modificadoras de navegador y header bootstrap mobile**/
 .header{
     grid-area: header;
     background-color: rgb(0, 0, 0);
@@ -49,7 +49,7 @@
     justify-content: center;
     align-content: center;
 }
-/**Clases y propiedades Main del index mobile**/
+/**Clases y propiedades Main del index mobile usando grid**/
 .main-index-section{
     display: grid;
     grid-template-columns: 1fr;
@@ -107,12 +107,12 @@
 }
 .noticias-subtitle{
     font-size: 22px;
-    padding: 0 8px;
+    padding: 3px 8px;
 }
 .noticias-paragraf{
     font-size: 14px;
     text-align: justify;
-    padding: 0 8px;
+    padding: 3px 8px;
 }
 .main-noticias-article{
     display: flex;
@@ -122,9 +122,19 @@
     height: 100%;
 }
 /**Clases y propiedades main de contacto mobile**/
+.main-contacto {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color:gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 .contacto-form{
     width: 90%;
-    height: 100%;
+    height: 90%;
     color:gold;
     font-family: 'Kanit', sans-serif;
     font-size: 14px;
@@ -140,59 +150,60 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-evenly;
 }
 input[type="text"] {
     color:rgb(59, 59, 59);
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: bold;
+    padding-left: 5px;
 }
 input[type="submit"] {
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    background-color: darkgray;
     padding: 0.2em;
-    border-radius: 5px;
-    border: inset 2px rgb(59, 59, 59);
+    box-shadow: 4px 2px 10px 3px #a39c53;
+	background-color:#9e9e9e;
+	border-radius:10px;
+	border:3px solid #000000;
 }
 input[type="email"] {
     color:rgb(59, 59, 59);
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: bold;
+    padding-left: 5px;
 }
 textarea {
     width: 90%;
-    background-color: darkgray;
     opacity: 80%;
     color:rgb(59, 59, 59);
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     font-weight: bold;
+    box-shadow: 4px 2px 10px 3px #a39c53;
+	background-color:#9e9e9e;
+	border-radius:10px;
+	border:3px solid #000000;
+    padding: 5px;
 }
-.main-contacto {
-    width: 100%;
-    height: 100%;
-    grid-area: main;
-    background-color: black;
-    color:gold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 legend{
     color: gold;
     text-decoration: underline;
+    font-size: 14px;
+}
+fieldset{
+    border: 1px solid gold;
+    border-radius: 10px;
+    gap: 5px;
 }
 .fieldset-properties{
     width: 100%;
+    padding-bottom: 5px;
 }
-.fieldset-properties label{
-    padding: 5px 0;
-}
+
 .fielset-contactType {
     width: 100%;
     display: flex;
@@ -207,7 +218,10 @@ legend{
 }
 .inptespecial {
     width: 90%;
-    background-color: darkgray;
+    box-shadow: 4px 2px 10px 3px #a39c53;
+	background-color:#9e9e9e;
+	border-radius:10px;
+	border:3px solid #000000;
     opacity: 80%;
 }
 /**clases y propiedades main galeria**/
@@ -280,6 +294,7 @@ legend{
 }
 /**cambio de propiedades para tablet**/
 @media (min-width: 768px){
+    /**Clases y propiedades navbar tablet**/
     .navBar{
         display: flex;
         flex-direction: row;
@@ -289,6 +304,7 @@ legend{
     .navBar li a{
         font-size: 50px;
     }
+    /**Clases y propiedades main de index tablet**/
     .main-index-div{
         font-size: 80px;
     }
@@ -310,7 +326,10 @@ legend{
     .noticias-paragraf{
         font-size: 20px;
     }
-    /**Clases y propiedades main de contacto mobile**/
+    /**Clases y propiedades main de contacto tablet**/
+    .contacto-form legend{
+        font-size: 20px;
+    }
     input[type="text"] {
         font-size: 16px;
         }
@@ -326,6 +345,7 @@ legend{
     .contacto-form{
         font-size: 18px;
     }
+    /**Clases y propiedades footer tablet**/
     .footer{
         display: flex;
         flex-direction: row-reverse;
@@ -350,15 +370,18 @@ legend{
 }
 /**cambio de propiedades tablet grande**/
 @media (min-width: 992px){
+    /**Clases y propiedades navbar de contacto tablet grande**/
     .navBar li {
         padding-right: 60px;                
     }
     .img-size{
         max-width: 100px;
     }
+    /**Clases y propiedades main index tablet grande**/
     .main-index-div{
         font-size: 100px;
     }
+    /**Clases y propiedades footer tablet grande**/
     .footer-redes div{
         padding-left: 20px;
         padding-right: 20px;
@@ -372,14 +395,9 @@ legend{
 }
 /**cambio de propiedades desktop**/
 @media (min-width: 1200px){
-    .container-index{
-        height: 100vh;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 7fr 1fr;
-    }
+    /**Clases y propiedades y animaciones navbar desktop**/
     .img-size:hover{
-        max-width: 120px;
+        animation: rotate-center 0.6s ease-in-out both;
     }
     .navBar li {
             padding-right: 90px;                
@@ -387,6 +405,13 @@ legend{
     .navBar li:hover {
         animation: animBar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation-name: navBarAnim
+    }
+    /**Clases y propiedades y animaciones index desktop**/
+    .container-index{
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
     }
     .main-index-section{
         display: flex;
@@ -414,6 +439,7 @@ legend{
         width: 80%;
         height: 80%;
     }
+    /**Clases y propiedades main noticias desktop**/
     .main-noticias{
         display:flex;
         justify-content: center;
@@ -439,6 +465,7 @@ legend{
     .noticias-paragraf{
         font-size: 20px;
     }
+    /**Clases y propiedades y animaciones main contacto desktop**/
     .main-contacto{
         background-image: url(../ASSETS/IMG/logo2.png);
         background-repeat: no-repeat;
@@ -446,10 +473,10 @@ legend{
         background-position: center;
     }
     input[type="text"] {
-        font-size: 18px;
+        font-size: 16px;
     }
     input[type="submit"] {
-    font-size: 18px;
+    font-size: 16px;
     color:gold;
     text-shadow: 2px 1px 12px #CC0000;
     box-shadow: 2px 2px 4px #696969;
@@ -463,14 +490,22 @@ legend{
         background: linear-gradient(to top, #5e5e5e,#BDBBBB );
     }
     input[type="email"] {
-    font-size: 18px;
+    font-size: 16px;
     }
     textarea {
     width: 90%;
     font-size: 18px;
     }
+    textarea{
+        text-shadow: 2px 2px 5px rgba(255, 217, 0, 0.425);
+        border-radius: 5px;
+    }
     textarea:hover{
         border:solid 2px lightgray;
+    }
+    textarea:focus{
+        border:solid 2px gold;
+        outline:none;
     }
     .inptespecial {
         text-shadow: 2px 2px 5px rgba(255, 217, 0, 0.425);
@@ -483,35 +518,13 @@ legend{
         border:solid 2px gold;
         outline:none;
     }
-    textarea{
-        text-shadow: 2px 2px 5px rgba(255, 217, 0, 0.425);
-        border-radius: 5px;
-    }
-    textarea:focus{
-        border:solid 2px gold;
-        outline:none;
-    }
     .contacto-form{
         width: 60%;
-        font-size: 20px;
+        font-size: 18px;
     }
+    /**Clases y propiedades main galeria y banda desktop**/
     .carrusel-dsn{
         height: 560px;
-    }
-    .footer-redes div{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .footer-redes div a picture img:hover{
-        background-color: rgba(255, 0, 0, 0.185);
-        border: solid 1px rgba(255, 0, 0, 0.459);
-        border-radius: 5px;
-    }
-    .footer-derechos{
-        padding-left: 20px;
-    }
-    .footer-derechos p{
-        font-size: 20px;
     }
     .card-band:hover{
         animation: cardAnim 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -529,7 +542,24 @@ legend{
     .h4-banda{
         text-shadow: -2px -2px 2px rgba(190, 175, 41, 1),-4px -4px 9px rgba(215, 191, 38, 1),-6px -6px 10px rgba(215, 157, 40, 0.84),-8px -8px 12px rgba(205, 108, 34, 0.79),-10px -10px 16px rgba(205, 51, 28, 0.61);
     }
-    /**animaciones navbar - index front**/
+    /**Clases y propiedades y animaciones footer desktop**/
+    .footer-redes div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-redes div a picture img:hover{
+        background-color: rgba(255, 0, 0, 0.185);
+        border: solid 1px rgba(255, 0, 0, 0.459);
+        border-radius: 5px;
+    }
+    .footer-derechos{
+        padding-left: 20px;
+    }
+    .footer-derechos p{
+        font-size: 20px;
+    }
+    
+    /**animaciones navbar - footer - cards - icono front**/
         @keyframes navBarAnim {
             0% {
                 transform: translateY(0) translateX(0);
@@ -564,6 +594,14 @@ legend{
                 transform-origin: 50% 50%;
                 box-shadow: 2px 2px 2px rgba(190, 175, 41, 1),4px 4px 9px rgba(215, 191, 38, 1),6px 6px 10px rgba(215, 157, 40, 0.84),8px 8px 12px rgba(205, 108, 34, 0.79),10px 10px 16px rgba(205, 51, 28, 0.61);
                 }
+        }
+        @keyframes rotate-center {
+            0% {
+                    transform: rotate(0);
+            }
+            100% {
+                    transform: rotate(360deg);
+            }
         }
     }
 }
