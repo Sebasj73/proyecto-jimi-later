@@ -228,6 +228,11 @@ legend{
     min-height: 270px;
     border: 1px solid gold;
 }
+.img-band{
+    max-height: 300px;
+    max-width: 300px;
+    align-self: center;
+}
 /**clases y propiedades footer mobile**/
 .footer{
     grid-area: footer;
