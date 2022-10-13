@@ -384,10 +384,6 @@ legend{
     .navBar li {
             padding-right: 90px;                
     }
-    .navBar li a:hover {
-        animation: animBar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation-name: navBarAnim
-    }
     .navBar li:hover {
         animation: animBar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation-name: navBarAnim
@@ -517,6 +513,22 @@ legend{
     .footer-derechos p{
         font-size: 20px;
     }
+    .card-band:hover{
+        animation: cardAnim 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-name: cardAnim
+    }
+    .h1-title{
+        text-shadow: 0px 2px 2px rgba(190, 175, 41, 1),0px 4px 9px rgba(215, 191, 38, 1),0px 6px 10px rgba(215, 157, 40, 0.84),0px 8px 12px rgba(205, 108, 34, 0.79),0px 10px 16px rgba(205, 51, 28, 0.61);
+    }
+    .h2-galeria{
+        text-shadow: 2px 2px 2px rgba(190, 175, 41, 1),4px 4px 9px rgba(215, 191, 38, 1),6px 6px 10px rgba(215, 157, 40, 0.84),8px 8px 12px rgba(205, 108, 34, 0.79),10px 10px 16px rgba(205, 51, 28, 0.61);
+    }
+    .h3-banda{
+    text-shadow: 2px 2px 2px rgba(190, 175, 41, 1),4px 4px 9px rgba(215, 191, 38, 1),6px 6px 10px rgba(215, 157, 40, 0.84),8px 8px 12px rgba(205, 108, 34, 0.79),10px 10px 16px rgba(205, 51, 28, 0.61);
+    }
+    .h4-banda{
+        text-shadow: -2px -2px 2px rgba(190, 175, 41, 1),-4px -4px 9px rgba(215, 191, 38, 1),-6px -6px 10px rgba(215, 157, 40, 0.84),-8px -8px 12px rgba(205, 108, 34, 0.79),-10px -10px 16px rgba(205, 51, 28, 0.61);
+    }
     /**animaciones navbar - index front**/
         @keyframes navBarAnim {
             0% {
@@ -542,5 +554,16 @@ legend{
                 text-shadow: none;
             }
         } 
+        @keyframes cardAnim {
+            0% {
+                transform: translateY(0) translateX(0);
+                transform-origin: 50% 50%;
+                }
+            100% {
+                transform: translateY(-10px) translateX(-10px);
+                transform-origin: 50% 50%;
+                box-shadow: 2px 2px 2px rgba(190, 175, 41, 1),4px 4px 9px rgba(215, 191, 38, 1),6px 6px 10px rgba(215, 157, 40, 0.84),8px 8px 12px rgba(205, 108, 34, 0.79),10px 10px 16px rgba(205, 51, 28, 0.61);
+                }
+        }
     }
 }
