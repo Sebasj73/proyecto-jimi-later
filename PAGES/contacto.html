@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
 </head>
 <body>
     <!--Contenedor noticias-->
-    <div class="container">
+    <div class="container-fluid container-index">
         <!--Header con navbar-->
         <header class="header">
-            <nav>
-                <ul class="navBar">
-                    <li><a class="animBar" href="../index.html">Inicio</a></li>
-                    <li><a class="animBar" href="./banda.html">Banda</a></li>
-                    <li><a class="animBar" href="./galeria.html">Galeria</a></li>
-                    <li><a class="animBar" href="./noticias.html">Noticias</a></li>
-                    <li><a class="animBar" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand navcolor" href=""><img class="img-size" src="../ASSETS/IMG/logo-redo.png" alt=""></a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 navBar">
+                        <li><a class="animBar" href="../index.html">Inicio</a></li>
+                        <li><a class="animBar" href="../PAGES/banda.html">Banda</a></li>
+                        <li><a class="animBar" href="../PAGES/galeria.html">Galeria</a></li>
+                        <li><a class="animBar" href="../PAGES/noticias.html">Noticias</a></li>
+                        <li><a class="animBar" href="../PAGES/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         </header>
         <main>
             <!--Main con formulario de contacto-->
@@ -46,20 +55,31 @@
                     <!--Fieldset tipo de contacto-->
                     <fieldset class="fielset-contactType alignFst">
                         <legend>Motivo</legend>
+                        <div class="d-flex justify-content-evenly">
+                            <div>
                         <label for="contrataciones">Contrataciones</label>
                         <input type="radio" id="contrataciones" name="Motivo" value="contrataciones">
-                        <label for="Souveniers">Souveniers</label>
-                        <input type="radio" id="Souveniers" name="Motivo" value="Souveniers">
+                    </div>
+                    <div>
+                        <label for="Merchandising">Merchandising</label>
+                        <input type="radio" id="Merchandising" name="Motivo" value="Merchandising">
+                    </div>
+                <div>
                         <label for="Consultas">Consultas</label>
                         <input type="radio" id="Consultas" name="Motivo" value="Consultas">
+                    </div>
+                        </div>
+                        <div>
                         <label for="acepta">Quiere recibir noticias?</label>
                         <input type="checkbox" id="acepta" name="acepta">
+                        </div>
+                        
                     </fieldset>
                     <!--Fieldset Mensaje-->
                     <fieldset class="fieldset-msj alignFst">
                         <legend>Mensaje</legend>
                         <label for="mensaje">
-                        <textarea name="Mensaje" id="Mensaje" cols="80" rows="15"></textarea>
+                        <textarea name="Mensaje" id="Mensaje" cols="80" rows="9"></textarea>
                         </label>
                     </fieldset>
                     <!--Contendor con botones de enviar y limpiar-->
@@ -74,7 +94,7 @@
         <footer class="footer">
             <section class="footer-redes">
                 <div>
-                    <a href="https://www.instagram.com/jimilater/" target="_blank">
+                    <a href="https://www.instagram.com/jimilaterok/" target="_blank">
                         <picture>
                             <source media="(min-width: 768px)" srcset="../ASSETS/IMG/insta.png">
                             <img class=".footer-redes-img" src="../ASSETS/IMG/insta-m.png" alt="" >
@@ -104,5 +124,6 @@
             </section>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
