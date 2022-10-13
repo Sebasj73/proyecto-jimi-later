@@ -4,13 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-html body{
-    height: 0;    
-    width: 100%;
-}
-
 /**demarcacion de contenedor y grid mobile first**/
 .container-index{
+    margin: 0;
+    padding: 0;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -212,6 +209,24 @@ legend{
     width: 90%;
     background-color: darkgray;
     opacity: 80%;
+}
+/**clases y propiedades main galeria**/
+.main-gal-bkg{
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+    color: gold;
+    font-size: 32px;
+}
+.carrusel-dsn{
+    border: 1px solid gold;
+    max-height: 560px;
+}
+.cont-videos{
+    height: 560px;
+}
+.alto-video{
+    min-height: 270px;
+    border: 1px solid gold;
 }
 /**clases y propiedades footer mobile**/
 .footer{
@@ -478,6 +493,9 @@ legend{
     .contacto-form{
         width: 60%;
         font-size: 20px;
+    }
+    .carrusel-dsn{
+        height: 560px;
     }
     .footer-redes div{
         padding-left: 20px;
