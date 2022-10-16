@@ -5,11 +5,15 @@
     box-sizing: border-box;
 }
 /**demarcacion de contenedor y grid mobile first index**/
+.bdy-bkg{
+    background-color: rgb(0, 0, 0);
+}
 .container-index{
     margin: 0;
     padding: 0;
     height: 100vh;
     display: grid;
+    background-color: rgb(0, 0, 0);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr 1fr;
     grid-template-areas:
