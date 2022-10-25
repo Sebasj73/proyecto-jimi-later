@@ -1,0 +1,23 @@
+.main-gal-bkg{
+    background-color: $bkg-primary;
+    @include font-props($color-primary,$font-secondary,none);
+    font-size: $galeria-ttl-sz-mbl;
+}
+.carrusel-dsn{
+    border: 1px solid $color-primary;
+}
+.cont-videos{
+    height: 560px;
+}
+.alto-video{
+    min-height: 270px;
+    border: 1px solid $color-primary;
+}
+.video-hidden{
+    display: none;
+}
+.img-band{
+    max-height: 300px;
+    max-width: 300px;
+    align-self: center;
+}
