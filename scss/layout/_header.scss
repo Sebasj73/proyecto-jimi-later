@@ -1,0 +1,21 @@
+.header{
+    grid-area: header;
+    background-color: $bkg-primary;
+    color: $color-primary;
+    @include flex-props(column,space-around,none)
+}
+.img-size{
+    max-width: 70px;
+}
+.custom-toggler{
+    background-color: $color-primary;
+}
+.navBar li{
+    list-style: none;
+    a{
+        text-decoration: none;
+        font-family: 'Loved by the King', cursive;
+        color: $color-primary;
+        font-size: $navBar-fnt-sz-mbl;
+    }
+}
