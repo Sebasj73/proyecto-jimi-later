@@ -17,7 +17,7 @@
     @include flex-props(column,space-evenly,center);
 }
 .footer-derechos p{
-    font-family: 'Kanit', sans-serif;
+    font-family: $font-secondary;
     font-size: 10px;
     background-color: $bkg-primary;
 }

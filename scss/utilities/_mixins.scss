@@ -4,3 +4,8 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin font-props ($colorfnt,$fontsz,$fontbld) {
+    color: $colorfnt;
+    font-size: $fontsz;
+    font-weight: $fontbld;
+}
