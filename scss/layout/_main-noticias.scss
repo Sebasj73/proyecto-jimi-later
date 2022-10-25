@@ -1,0 +1,26 @@
+.main-noticias{
+    background-color: $bkg-primary;
+}
+.main-noticias-section{
+    @include flex-props(column,space-between,center);
+    @include font-props($color-primary,$font-secondary,none);
+    height: 100%;
+    background-color: $bkg-secondary;
+}
+.noticias-title{
+    text-align: center;
+    font-size: $noticias-ttl-sz-mbl;
+}
+.noticias-subtitle{
+    font-size: $noticias-sbttl-sz-mbl;
+    padding: 3px 8px;
+}
+.noticias-paragraf{
+    font-size: $forms-fnt-sz-mbl;
+    text-align: justify;
+    padding: 3px 8px;
+}
+.main-noticias-article{
+    @include flex-props(column,space-evenly,center);
+    height: 100%;
+}
