@@ -1,0 +1,23 @@
+.footer{
+    grid-area: footer;
+    background-color: $bkg-primary;
+    color:$color-primary;
+    @include flex-props(column,space-evenly,none);
+}
+.footer-redes{
+    background-color: black;
+    @include flex-props(row,space-evenly,none)
+}
+.footer-redes-img{
+    max-width: 40%;
+    max-height: 40%;
+}
+.footer-derechos{
+    background-color: $bkg-primary;
+    @include flex-props(column,space-evenly,center);
+}
+.footer-derechos p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 10px;
+    background-color: $bkg-primary;
+}
