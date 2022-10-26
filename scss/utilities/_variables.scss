@@ -1,15 +1,45 @@
+/*Colores*/
 $color-primary: gold;
 $color-secondary: rgb(59, 59, 59);
+/*Colores background*/
 $bkg-primary:black;
 $bkg-secondary:rgba(211, 211, 211, 0.267);
+$bkg-redes-hover:  rgba(221, 153, 75, 0.507);
 $bkg-forms: #9e9e9e;
+/*Shadows*/
 $bx-shad-forms: 4px 2px 10px 3px #a39c53;
+$form-shad-input: 2px 2px 5px rgba(255, 217, 0, 0.425);
+$idx-shad-ttl: 1px 1px 3px orange, 0 0 1em red, 0 0 0.1em red;
+$h1-shad-ttl: 0px 2px 2px rgba(190, 175, 41, 1),0px 4px 9px rgba(215, 191, 38, 1),0px 6px 10px rgba(215, 157, 40, 0.84),0px 8px 12px rgba(205, 108, 34, 0.79),0px 10px 16px rgba(205, 51, 28, 0.61);
+$h23-shad-sbttl: 2px 2px 2px rgba(190, 175, 41, 1),4px 4px 9px rgba(215, 191, 38, 1),6px 6px 10px rgba(215, 157, 40, 0.84),8px 8px 12px rgba(205, 108, 34, 0.79),10px 10px 16px rgba(205, 51, 28, 0.61);
+$h4-shad-ins: -2px -2px 2px rgba(190, 175, 41, 1),-4px -4px 9px rgba(215, 191, 38, 1),-6px -6px 10px rgba(215, 157, 40, 0.84),-8px -8px 12px rgba(205, 108, 34, 0.79),-10px -10px 16px rgba(205, 51, 28, 0.61);
+/*Font-size*/
 $navBar-fnt-sz-mbl: 32px;
+$navBar-fnt-sz-mblg: 45px;
+$navBar-fnt-sz-tblt: 50px;
 $galeria-ttl-sz-mbl: 32px;
 $noticias-ttl-sz-mbl: 28px;
+$noticias-ttl-sz-tblt: 36px;
+$noticias-ttl-sz-dskt: 38px;
 $noticias-sbttl-sz-mbl: 22px;
+$noticias-sbttl-sz-tblt: 30px;
+$noticias-sbttl-sz-dskt: 32px;
 $input-fnt-sz-mbl: 12px;
+$input-fnt-sz-mblg: 15px;
+$input-fnt-sz-tblt: 18px;
+$input-fnt-sz-tbltg: 20px;
 $forms-fnt-sz-mbl: 14px;
+$forms-fnt-sz-tblt: 18px;
+$forms-fnt-sz-dskt: 20px;
 $main-title-fnt-sz: 50px;
+$main-title-fnt-sz-mblg: 75px;
+$main-title-fnt-sz-tblt: 80px;
+$main-title-fnt-sz-tbltg: 100px;
+$main-title-fnt-sz-dskt: 120px;
+/*Bordes*/
+$bord-input-hover: solid 2px lightgray;
+$bord-input-focus: solid 2px gold;
+$bord-redes-hover:solid 1px rgba(255, 0, 0, 0.459);
+/*Fuentes*/
 $font-primary: 'Loved by the King', cursive;
 $font-secondary: 'Kanit', sans-serif;

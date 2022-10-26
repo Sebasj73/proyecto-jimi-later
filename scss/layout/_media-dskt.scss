@@ -1,0 +1,136 @@
+@media (min-width: 1200px){
+    /**Clases y propiedades y animaciones navbar desktop**/
+    .img-size:hover{
+        animation: rotate-center 0.6s ease-in-out both;
+    }
+    .navBar li {
+            padding-right: 90px;                
+    }
+    .navBar li:hover {
+        animation: animBar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-name: navBarAnim
+    }
+    /**Clases y propiedades y animaciones index desktop**/
+    .container-index{
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
+    }
+    .main-index-section{
+        @include flex-props(row,space-evenly,center);
+    }
+    .main-index-div {
+        animation-name: text-shadow-multicolor;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        font-size: $main-title-fnt-sz-dskt;
+    }
+    .index-div2{
+        @include flex-props (row,center,center);
+    }
+    .index-div2 img{
+        width: 80%;
+        height: 80%;
+    }
+    /**Clases y propiedades main noticias desktop**/
+    .main-noticias{
+        @include flex-props(none,center,none);
+        @include bkg-img(url(../ASSETS/IMG/logo2.png),no-repeat,contain,center);
+    }
+    .main-noticias-section{
+        width: 80%;
+    }
+    .main-noticias-article div:hover{
+        border: solid 2px $color-primary;
+        border-radius: 10px;
+        background-color: $bkg-primary;
+    }
+    .noticias-title{
+        font-size: $noticias-ttl-sz-dskt;
+    }
+    .noticias-subtitle{
+        font-size: $noticias-sbttl-sz-dskt;
+    }
+    .noticias-paragraf{
+        font-size: $forms-fnt-sz-dskt;
+    }
+    /**Clases y propiedades y animaciones main contacto desktop**/
+    .main-contacto{
+        @include bkg-img(url(../ASSETS/IMG/logo2.png),no-repeat,contain,center);
+    }
+    @import "../components/buttons-dskt";
+    
+    textarea {
+        width: 90%;
+        text-shadow: $form-shad-input;
+        border-radius: 5px;
+        &:hover{
+            border: $bord-input-hover;
+        }
+        &:focus{
+            border:$bord-input-focus;
+            outline:none;
+        }
+    }
+    .inptespecial {
+        text-shadow: $form-shad-input;
+        border-radius: 5px;
+        &:hover{
+            border: $bord-input-hover;
+        }
+        &:focus{
+            border:$bord-input-focus;
+            outline:none;
+        }
+    }
+    .contacto-form{
+        width: 60%;
+        font-size: $forms-fnt-sz-dskt;
+    }
+    /**Clases y propiedades main galeria y banda desktop**/
+    .carrusel-dsn{
+        height: 560px;
+        max-height: 560px;
+    }
+    .main-gal-bkg{
+        @include bkg-img(url(../ASSETS/IMG/logo2.png),no-repeat,contain,center);
+    }
+    .card-band{
+        border-radius: 50px;
+    }
+    .card-band:hover{
+        animation: cardAnim 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-name: cardAnim;
+        background-color: #000000;
+    }
+    .h1-title{
+        text-shadow: $h1-shad-ttl;
+    }
+    .h2-galeria{
+        text-shadow: $h23-shad-sbttl;
+    }
+    .h3-banda{
+        text-shadow: $h23-shad-sbttl;
+    }
+    .h4-banda{
+        text-shadow: $h4-shad-ins;
+    }
+    /**Clases y propiedades y animaciones footer desktop**/
+    .footer-redes div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-redes div a picture img:hover{
+        background-color: $bkg-redes-hover;
+        border: $bord-redes-hover;
+        border-radius: 5px;
+    }
+    .footer-derechos{
+        padding-left: 20px;
+    }
+}

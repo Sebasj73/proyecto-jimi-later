@@ -1,0 +1,27 @@
+@media (min-width: 992px){
+    /**Clases y propiedades navbar de contacto tablet grande**/
+    .navBar li {
+        padding-right: 60px;
+        & a{
+            padding-right: 15px;
+        }                
+    }
+    .img-size{
+        max-width: 100px;
+    }
+    /**Clases y propiedades main index tablet grande**/
+    .main-index-div{
+        font-size: $main-title-fnt-sz-tbltg;
+    }
+    /**Clases y propiedades footer tablet grande**/
+    .footer-redes div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-derechos{
+        padding-left: 20px;
+    }
+    .footer-derechos p{
+        font-size: $input-fnt-sz-tbltg;
+    }
+}

@@ -1,0 +1,69 @@
+@media (min-width: 768px){
+    /**Clases y propiedades navbar tablet**/
+    .navBar{
+        @include flex-props (row,space-between,none);
+        align-self:center;
+    }
+    .navBar li a{
+        font-size: $navBar-fnt-sz-tblt;
+    }
+    /**Clases y propiedades main de index tablet**/
+    .main-index-div{
+        font-size: $main-title-fnt-sz-tblt;
+    }
+    .index-div2{
+        @include flex-props (none,center,center);
+    }
+    .index-div2 img{
+        max-width: 70%;
+        height: auto;
+    }
+    .noticias-title{
+        font-size: $noticias-ttl-sz-tblt;
+    }
+    .noticias-subtitle{
+        font-size: $noticias-sbttl-sz-tblt;
+    }
+    .noticias-paragraf{
+        font-size: $forms-fnt-sz-tblt;
+    }
+    /**Clases y propiedades main de contacto tablet**/
+    .contacto-form legend{
+        font-size: $forms-fnt-sz-tblt;
+    }
+    input[type="text"] {
+        font-size: $input-fnt-sz-tblt;
+        }
+    input[type="submit"] {
+        font-size: $input-fnt-sz-tblt;
+    }
+    input[type="email"] {
+        font-size: $input-fnt-sz-tblt;
+    }
+    textarea {
+        font-size: $input-fnt-sz-tblt;
+    }
+    .contacto-form{
+        font-size: $input-fnt-sz-tblt;
+    }
+    /**Clases y propiedades footer tablet**/
+    .footer{
+        @include flex-props (row-reverse,space-between,none);
+    }
+    .footer-redes{
+        justify-self: flex-end;
+        align-self: center;
+    }
+    .footer-redes div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-derechos{
+        align-self: center;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .footer-derechos p{
+        font-size: $input-fnt-sz-tblt;
+    }
+}

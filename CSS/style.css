@@ -1,8 +1,17 @@
+/*Colores*/
+/*Colores background*/
+/*Shadows*/
+/*Font-size*/
+/*Bordes*/
+/*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Loved+by+the+King&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+body {
+  background-color: black; }
 
 .container-index {
   margin: 0;
@@ -12,7 +21,8 @@
   background-color: black;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 8fr 1fr;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  background-color: black; }
 
 .header {
   grid-area: header;
@@ -158,15 +168,17 @@
   align-items: none;
   text-align: center; }
 
-input[type="submit"] {
-  color: none;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 0.2em;
+.input-props {
   box-shadow: 4px 2px 10px 3px #a39c53;
   background-color: #9e9e9e;
   border-radius: 10px;
   border: 3px solid black; }
+
+input[type="submit"] {
+  color: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.2em; }
 
 textarea {
   color: #3b3b3b;
@@ -174,10 +186,6 @@ textarea {
   font-weight: bold;
   width: 90%;
   opacity: 80%;
-  box-shadow: 4px 2px 10px 3px #a39c53;
-  background-color: #9e9e9e;
-  border-radius: 10px;
-  border: 3px solid black;
   padding: 5px; }
 
 legend {
@@ -213,10 +221,6 @@ fieldset {
   font-weight: bold;
   width: 90%;
   opacity: 80%;
-  box-shadow: 4px 2px 10px 3px #a39c53;
-  background-color: #9e9e9e;
-  border-radius: 10px;
-  border: 3px solid black;
   padding: 5px; }
 
 .footer {
@@ -248,5 +252,262 @@ fieldset {
 
 .footer-derechos p {
   font-family: "Kanit", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   background-color: black; }
+
+@media (min-width: 576px) {
+  .navBar li a {
+    font-size: 45px; }
+  .main-index-section {
+    grid-template-rows: 1fr 4fr 1fr; }
+  .main-index-div {
+    font-size: 75px; }
+  .footer-derechos p {
+    font-size: 15px; } }
+
+@media (min-width: 768px) {
+  /**Clases y propiedades navbar tablet**/
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: none;
+    align-self: center; }
+  .navBar li a {
+    font-size: 50px; }
+  /**Clases y propiedades main de index tablet**/
+  .main-index-div {
+    font-size: 80px; }
+  .index-div2 {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center; }
+  .index-div2 img {
+    max-width: 70%;
+    height: auto; }
+  .noticias-title {
+    font-size: 36px; }
+  .noticias-subtitle {
+    font-size: 30px; }
+  .noticias-paragraf {
+    font-size: 18px; }
+  /**Clases y propiedades main de contacto tablet**/
+  .contacto-form legend {
+    font-size: 18px; }
+  input[type="text"] {
+    font-size: 18px; }
+  input[type="submit"] {
+    font-size: 18px; }
+  input[type="email"] {
+    font-size: 18px; }
+  textarea {
+    font-size: 18px; }
+  .contacto-form {
+    font-size: 18px; }
+  /**Clases y propiedades footer tablet**/
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: none; }
+  .footer-redes {
+    justify-self: flex-end;
+    align-self: center; }
+  .footer-redes div {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .footer-derechos {
+    align-self: center;
+    align-items: flex-start;
+    padding-left: 10px; }
+  .footer-derechos p {
+    font-size: 18px; } }
+
+@media (min-width: 992px) {
+  /**Clases y propiedades navbar de contacto tablet grande**/
+  .navBar li {
+    padding-right: 60px; }
+    .navBar li a {
+      padding-right: 15px; }
+  .img-size {
+    max-width: 100px; }
+  /**Clases y propiedades main index tablet grande**/
+  .main-index-div {
+    font-size: 100px; }
+  /**Clases y propiedades footer tablet grande**/
+  .footer-redes div {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .footer-derechos {
+    padding-left: 20px; }
+  .footer-derechos p {
+    font-size: 20px; } }
+
+@media (min-width: 1200px) {
+  /**Clases y propiedades y animaciones navbar desktop**/
+  .img-size:hover {
+    animation: rotate-center 0.6s ease-in-out both; }
+  .navBar li {
+    padding-right: 90px; }
+  .navBar li:hover {
+    animation: animBar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-name: navBarAnim; }
+  /**Clases y propiedades y animaciones index desktop**/
+  .container-index {
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1fr; }
+  .main-index-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  .main-index-div {
+    animation-name: text-shadow-multicolor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    font-size: 120px; }
+  .index-div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .index-div2 img {
+    width: 80%;
+    height: 80%; }
+  /**Clases y propiedades main noticias desktop**/
+  .main-noticias {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    background-image: url(../ASSETS/IMG/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .main-noticias-section {
+    width: 80%; }
+  .main-noticias-article div:hover {
+    border: solid 2px gold;
+    border-radius: 10px;
+    background-color: black; }
+  .noticias-title {
+    font-size: 38px; }
+  .noticias-subtitle {
+    font-size: 32px; }
+  .noticias-paragraf {
+    font-size: 20px; }
+  /**Clases y propiedades y animaciones main contacto desktop**/
+  .main-contacto {
+    background-image: url(../ASSETS/IMG/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  input[type="submit"] {
+    font-size: 16px;
+    color: gold;
+    text-shadow: 1px 1px 8px #cc9c00, 1px 1px 12px #cc7a00;
+    box-shadow: 0px 0px 4px #696969, 0px 0px 6px #464646, 0px 0px 8px #272727;
+    padding: 3px 5px;
+    border-radius: 7px;
+    border: 2px inset #696969;
+    background: linear-gradient(to top, #999898, #222222); }
+    input[type="submit"]:hover {
+      background: linear-gradient(to top, #222222, #999898); }
+  textarea {
+    width: 90%;
+    text-shadow: 2px 2px 5px rgba(255, 217, 0, 0.425);
+    border-radius: 5px; }
+    textarea:hover {
+      border: solid 2px lightgray; }
+    textarea:focus {
+      border: solid 2px gold;
+      outline: none; }
+  .inptespecial {
+    text-shadow: 2px 2px 5px rgba(255, 217, 0, 0.425);
+    border-radius: 5px; }
+    .inptespecial:hover {
+      border: solid 2px lightgray; }
+    .inptespecial:focus {
+      border: solid 2px gold;
+      outline: none; }
+  .contacto-form {
+    width: 60%;
+    font-size: 20px; }
+  /**Clases y propiedades main galeria y banda desktop**/
+  .carrusel-dsn {
+    height: 560px;
+    max-height: 560px; }
+  .main-gal-bkg {
+    background-image: url(../ASSETS/IMG/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .card-band {
+    border-radius: 50px; }
+  .card-band:hover {
+    animation: cardAnim 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-name: cardAnim;
+    background-color: #000000; }
+  .h1-title {
+    text-shadow: 0px 2px 2px #beaf29, 0px 4px 9px #d7bf26, 0px 6px 10px rgba(215, 157, 40, 0.84), 0px 8px 12px rgba(205, 108, 34, 0.79), 0px 10px 16px rgba(205, 51, 28, 0.61); }
+  .h2-galeria {
+    text-shadow: 2px 2px 2px #beaf29, 4px 4px 9px #d7bf26, 6px 6px 10px rgba(215, 157, 40, 0.84), 8px 8px 12px rgba(205, 108, 34, 0.79), 10px 10px 16px rgba(205, 51, 28, 0.61); }
+  .h3-banda {
+    text-shadow: 2px 2px 2px #beaf29, 4px 4px 9px #d7bf26, 6px 6px 10px rgba(215, 157, 40, 0.84), 8px 8px 12px rgba(205, 108, 34, 0.79), 10px 10px 16px rgba(205, 51, 28, 0.61); }
+  .h4-banda {
+    text-shadow: -2px -2px 2px #beaf29, -4px -4px 9px #d7bf26, -6px -6px 10px rgba(215, 157, 40, 0.84), -8px -8px 12px rgba(205, 108, 34, 0.79), -10px -10px 16px rgba(205, 51, 28, 0.61); }
+  /**Clases y propiedades y animaciones footer desktop**/
+  .footer-redes div {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .footer-redes div a picture img:hover {
+    background-color: rgba(221, 153, 75, 0.507);
+    border: solid 1px rgba(255, 0, 0, 0.459);
+    border-radius: 5px; }
+  .footer-derechos {
+    padding-left: 20px; } }
+
+@media (min-width: 1400px) {
+  .video-hidden {
+    display: block; } }
+
+/**animaciones navbar - footer - cards - icono front**/
+@keyframes navBarAnim {
+  0% {
+    transform: translateY(0) translateX(0);
+    transform-origin: 50% 50%;
+    text-shadow: none; }
+  100% {
+    transform: translateY(-10px) translateX(-10px);
+    transform-origin: 50% 50%;
+    text-shadow: 2px 2px 2px #beaf29, 4px 4px 9px #d7bf26, 6px 6px 10px rgba(215, 157, 40, 0.84), 8px 8px 12px rgba(205, 108, 34, 0.79), 10px 10px 16px rgba(205, 51, 28, 0.61); } }
+
+@keyframes text-shadow-multicolor {
+  0% {
+    text-shadow: none; }
+  50% {
+    text-shadow: 1px 1px 3px orange, 0 0 1em red, 0 0 0.1em red; }
+  100% {
+    text-shadow: none; } }
+
+@keyframes cardAnim {
+  0% {
+    transform: translateY(0) translateX(0);
+    transform-origin: 50% 50%; }
+  100% {
+    transform: translateY(-10px) translateX(-10px);
+    transform-origin: 50% 50%;
+    box-shadow: 2px 2px 2px #beaf29, 4px 4px 9px #d7bf26, 6px 6px 10px rgba(215, 157, 40, 0.84), 8px 8px 12px rgba(205, 108, 34, 0.79), 10px 10px 16px rgba(205, 51, 28, 0.61); } }
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }

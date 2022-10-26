@@ -9,3 +9,9 @@
     font-size: $fontsz;
     font-weight: $fontbld;
 }
+@mixin bkg-img ($bkg-url,$repeat,$bkg-sz,$bkg-pos){
+    background-image: $bkg-url;
+    background-repeat: $repeat;
+    background-size: $bkg-sz;
+    background-position: $bkg-pos;
+}

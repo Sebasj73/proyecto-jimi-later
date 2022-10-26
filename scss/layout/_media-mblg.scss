@@ -1,0 +1,14 @@
+@media (min-width: 576px){
+    .navBar li a {
+        font-size: $navBar-fnt-sz-mblg;
+    }
+    .main-index-section{
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+    .main-index-div{
+        font-size: $main-title-fnt-sz-mblg;
+    }
+    .footer-derechos p{
+        font-size: $input-fnt-sz-mblg;
+    }
+}

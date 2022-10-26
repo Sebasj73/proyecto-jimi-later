@@ -2,6 +2,7 @@
 @import "./base/typo";
 @import "./utilities/mixins";
 @import "./base/reset";
+@import "./layout/body";
 @import "./layout/content-index";
 @import "./layout/header";
 @import "./layout/main-index";
@@ -9,3 +10,9 @@
 @import "./layout/main-galeria";
 @import "./layout/main-contacto";
 @import "./layout/footer";
+@import "./layout/media-mblg";
+@import "./layout/media-tblt";
+@import "./layout/media-tbltg";
+@import "./layout/media-dskt";
+@import "./layout/media-full";
+@import "./layout/animaciones";

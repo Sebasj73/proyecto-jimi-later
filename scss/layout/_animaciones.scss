@@ -1,0 +1,44 @@
+/**animaciones navbar - footer - cards - icono front**/
+@keyframes navBarAnim {
+    0% {
+        transform: translateY(0) translateX(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateY(-10px) translateX(-10px);
+        transform-origin: 50% 50%;
+        text-shadow: $h23-shad-sbttl;
+    }
+}
+@keyframes text-shadow-multicolor {
+
+    0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: $idx-shad-ttl;
+    }
+    100% {
+        text-shadow: none;
+    }
+} 
+@keyframes cardAnim {
+    0% {
+        transform: translateY(0) translateX(0);
+        transform-origin: 50% 50%;
+        }
+    100% {
+        transform: translateY(-10px) translateX(-10px);
+        transform-origin: 50% 50%;
+        box-shadow: $h23-shad-sbttl;
+    }
+}
+@keyframes rotate-center {
+    0% {
+            transform: rotate(0);
+    }
+    100% {
+            transform: rotate(360deg);
+    }
+}
