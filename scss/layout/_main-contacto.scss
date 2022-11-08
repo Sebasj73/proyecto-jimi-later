@@ -4,6 +4,10 @@
     background-color: $bkg-primary;
     color: $color-primary;
     @include flex-props(column,center,center);
+    & h1{
+        font-size: $forms-fnt-sz-tblt;
+        margin-bottom: 20px;
+    }
 }
 .contacto-form{
     width: 90%;
@@ -19,7 +23,8 @@
     box-shadow: $bx-shad-forms;
     background-color: $bkg-forms;
     border-radius:10px;
-    border:3px solid $bkg-primary;
+    border:2px solid $bkg-primary;
+    margin-bottom: 15px;
 }
 input[type="submit"] {
     @include font-props(none,$input-fnt-sz-mbl,bold);
@@ -28,8 +33,8 @@ input[type="submit"] {
 textarea {
     @include font-props($color-secondary,$input-fnt-sz-mbl,bold);
     width: 90%;
-    opacity: 80%;
-    padding: 5px;
+    opacity: 0.95;
+    margin-bottom: 10px;
 }
 legend{
     text-decoration: underline;
@@ -38,11 +43,11 @@ legend{
 fieldset{
     border: 1px solid $color-primary;
     border-radius: 10px;
-    gap: 5px;
+    margin: 5px;
 }
 .fieldset-properties{
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .fielset-contactType {
@@ -56,6 +61,6 @@ fieldset{
 .inptespecial{
     @include font-props($color-secondary,$input-fnt-sz-mbl,bold);
     width: 90%;
-    opacity: 80%;
+    opacity: 0.95 !important;
     padding: 5px;
 }

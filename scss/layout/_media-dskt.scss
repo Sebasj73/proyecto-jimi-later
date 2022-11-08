@@ -68,10 +68,15 @@
         @include flex-props(row,space-between,center);
         padding: 0 40px;
     }
+    .contacto-form{
+        width: 60%;
+        font-size: $forms-fnt-sz-dskt;
+    }
+    legend{
+        font-size: 22px !important;
+    }
     textarea {
         width: 90%;
-        text-shadow: $form-shad-input;
-        border-radius: 5px;
         &:hover{
             border: $bord-input-hover;
         }
@@ -81,8 +86,6 @@
         }
     }
     .inptespecial {
-        text-shadow: $form-shad-input;
-        border-radius: 5px;
         width: 60%;
         &:hover{
             border: $bord-input-hover;
@@ -92,10 +95,10 @@
             outline:none;
         }
     }
-    .contacto-form{
-        width: 60%;
-        font-size: $forms-fnt-sz-dskt;
+    .input-props{
+        font-size: $input-fnt-sz-tbltg !important;
     }
+    
     /**Clases y propiedades main galeria y banda desktop**/
     .carrusel-dsn{
         height: 560px;
